@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  .box-sizing(border-box);
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	display: inline-block;
+	text-decoration: underline;
+
+	img {
+		border: none;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+strong, h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+
+address {
+	font-style: normal;
+}
+
+input, button, textarea {
+	.no-app;
+	&:focus {
+		outline: none;
+	}
+}
+
+input[type="submit"], button {
+	cursor: pointer;
+}

@@ -1,0 +1,38 @@
+//colors
+@main_clr: #28BE84;
+@text_clr: #252A29;
+@text_clr2: #4C5352;
+@decor_clr: #60ADD8;
+@decor_clr2: #0B4261;
+@sprite_dir: '../img/sprite.png';
+
+//fonts
+@import url(../fonts/site-fonts.css);
+@din_reg: 'pf_dintext_proregular';
+@din_med: 'pf_dintext_promedium';
+
+@import "mixins";
+@import "resets";
+
+body {
+	font-family: @din_reg;
+	background: url(../img/body.jpg);
+	color: #333333;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 980px;
+	font-size: 14px;
+}
+
+a {
+	color: @decor_clr2;
+	font-size: 13px;
+}
+
+@import "forms";
+@import "buttons";
+@import "layout";
+@import "modal-wind";
+@import "icons";

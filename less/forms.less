@@ -1,0 +1,244 @@
+.placeholder(#434847, 400);
+
+.text-inp {
+	margin-bottom: 12px;
+	padding: 0 10px;
+	height: 40px;
+	border: 1px solid #CDCDCD;
+	border-radius: 4px;
+	font-size: 16px;
+	color: @text_clr;
+
+	&:focus {
+		border-color: #30BB85;
+	}
+}
+
+.main-textarea {
+	padding: 10px;
+	height: 92px;
+	border: 1px solid #CDCDCD;
+	border-radius: 4px;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: @din_reg;
+	color: @text_clr;
+	resize: none;
+
+	&:focus {
+		border-color: #30BB85;
+	}
+}
+
+.submit-form {
+	height: 50px;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: @din_med;
+	background: #30BB85;
+	border-radius: 4px;
+	border: none;
+	border-bottom: 2px solid #23A06F;
+	cursor: pointer;
+
+	&:hover {
+		background: rgba(48,210,148,1);
+		background: -moz-radial-gradient(center, ellipse cover, rgba(48,210,148,1) 0%, rgba(37,187,130,1) 100%);
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(48,210,148,1)), color-stop(100%, rgba(37,187,130,1)));
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(48,210,148,1) 0%, rgba(37,187,130,1) 100%);
+		background: -o-radial-gradient(center, ellipse cover, rgba(48,210,148,1) 0%, rgba(37,187,130,1) 100%);
+		background: -ms-radial-gradient(center, ellipse cover, rgba(48,210,148,1) 0%, rgba(37,187,130,1) 100%);
+		background: radial-gradient(ellipse at center, rgba(48,210,148,1) 0%, rgba(37,187,130,1) 100%);
+		border-color: #0FA56B;
+	}
+}
+
+.cancel-form {
+	display: inline-block;
+	line-height: 38px;
+	margin-left: 18px;
+	padding: 0 15px;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: @din_med;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: #C0C0C0;
+	border-bottom:  2px solid#9B9B9B;
+
+	&:hover {
+		background-color: #9A9898!important;
+		border-bottom-color: #868686;
+	}
+}
+
+.site-search {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin-top: 15px;
+
+	.search-request {
+		width: 100%;
+		height: 32px;
+		padding: 0 32px 0 15px;
+		border: 1px solid #DADBDF;
+		border-radius: 5px;
+	}
+
+
+	.search-submit {
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: 0;
+		border: none;
+		background-color: transparent;
+		.iconko(32px,32px,188px,4px);
+	}
+}
+
+.good-datetime {
+	.all-just;
+
+	span {
+		font-size: 16px;
+	}
+
+	.date-selector {
+		width: 130px!important;
+	}
+
+	.time-selector {
+		width: 95px!important;
+	}
+
+	.time-selector {
+		display: inline-block;
+		vertical-align: top;
+
+		.ik_select_autowidth {
+			width: 95px!important;
+		}
+	}
+}
+
+.ik_select  {
+	font-size: 16px;
+}
+
+.ik_select_link {
+	position: relative;
+	padding: 0 10px;
+	height: 40px;
+	border: 1px solid #CDCDCD;
+	border-radius: 4px;
+	cursor: pointer;
+
+	.ik_select_link_text {
+		line-height: 40px;
+		font-size: 16px;
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: 8px;
+		margin-top: -3px;
+		.iconko(11px,6px,363px,16px);
+	}
+}
+
+.ik_select_dropdown {
+	width: auto!important;
+	background: #fff;
+	max-height: 170px;
+	overflow: auto;
+
+	ul {
+		li {
+			padding: 4px 30px 4px 12px;
+			cursor: pointer;
+
+			&:nth-child(odd) {
+				background: #CDCDCD + #222;
+			}
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.date-selector {
+	.sprite(-262px,-199px);
+}
+
+.form-undertext {
+	margin: 12px 0;
+	text-align: left;
+	font-size: 14px;
+	color: @text_clr;
+}
+
+.review-rorm {
+	display: none;
+	padding: 30px 0;
+	.all-just;
+	border-bottom: 2px solid #ADDBED;
+
+	.left-group {
+		display: inline-block;
+		width: 312px;
+		vertical-align: top;
+
+		.text-inp {
+			width: 100%;
+		}
+
+		label {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 16px;
+		}
+
+		.form-select {
+			display: inline-block;
+		}
+	}
+
+	.right-group {
+		display: inline-block;
+		width: 605px;
+		vertical-align: top;
+		text-align: right;
+
+		.main-textarea {
+			width: 100%;
+		}
+
+		.submit-form {
+			padding: 0 15px;
+			margin-top: 18px;
+			height: 40px;
+		}
+	}
+
+	.form-select {
+		.ik_select_autowidth {
+			width: 120px!important;
+		}
+	}
+}
+
+.onsite-public {
+	margin-top: 6px;
+	.all-just;
+}

@@ -1,0 +1,52 @@
+.main-btn {
+	display: inline-block!important;
+	padding: 0 12px;
+	border-radius: 3px;
+	color: #fff!important;
+	font-family: @din_med;
+	font-size: 19px;
+	background-color: @main_clr;
+	border-bottom: 2px solid @main_clr - #333;
+
+	span {
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 40px;
+		margin-left: 10px;
+	}
+
+	&.alt {
+		background-color: @decor_clr;
+		border-color: @decor_clr - #333;
+
+		&:hover {
+			background: #3AA8E5;
+			border-color: #4696C3;
+		}
+	}
+
+	&:hover {
+		background: rgba(48,210,148,1);
+		background: -moz-radial-gradient(center, ellipse cover, rgba(48,210,148,1) 0%, rgba(37,187,130,1) 100%);
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(48,210,148,1)), color-stop(100%, rgba(37,187,130,1)));
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(48,210,148,1) 0%, rgba(37,187,130,1) 100%);
+		background: -o-radial-gradient(center, ellipse cover, rgba(48,210,148,1) 0%, rgba(37,187,130,1) 100%);
+		background: -ms-radial-gradient(center, ellipse cover, rgba(48,210,148,1) 0%, rgba(37,187,130,1) 100%);
+		background: radial-gradient(ellipse at center, rgba(48,210,148,1) 0%, rgba(37,187,130,1) 100%);
+		border-color: #0FA56B;
+	}
+}
+
+.some-button {
+	display: inline-block;
+	padding: 0 15px;
+	color: #fff;
+	line-height: 32px;
+	text-decoration: none;
+	font-family: @din_med;
+	background: #30BB85;
+
+	&:hover {
+		background: #30BB85 + #111;
+	}
+}

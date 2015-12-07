@@ -1,0 +1,22 @@
+@font-face {
+    font-family:'pf_dintext_proregular';
+    src:url('pfdintextpro-regular.eot');
+    src:url('pfdintextpro-regular.eot?#iefix') format('embedded-opentype'),
+        url('pfdintextpro-regular.woff') format('woff'),
+        url('pfdintextpro-regular.ttf') format('truetype'),
+        url('pfdintextpro-regular.svg#pf_dintext_proregular') format('svg');
+    font-weight:400;
+    font-style:normal;
+}
+
+
+@font-face {
+    font-family:'pf_dintext_promedium';
+    src:url('pfdintextpro-medium.eot');
+    src:url('pfdintextpro-medium.eot?#iefix') format('embedded-opentype'),
+        url('pfdintextpro-medium.woff') format('woff'),
+        url('pfdintextpro-medium.ttf') format('truetype'),
+        url('pfdintextpro-medium.svg#pf_dintext_promedium') format('svg');
+    font-weight:500;
+    font-style:normal;
+}

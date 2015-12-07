@@ -1,0 +1,71 @@
+.overlay {
+	display: none;
+	position: fixed;
+	.size(100%,100%);
+	top: 0;
+	left: 0;
+	z-index: 9;
+	background: rgba(0, 0, 0, 0.7);
+	.clear-link;
+}
+
+.modal-window {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	padding: 30px;
+	background: #fff;
+	z-index: 11;
+	.translate(-50%,-50%);
+	border: 9px solid #60ADD8;
+	border-radius: 4px;
+	max-height: 100%;
+	max-width: 100%;
+
+	h4 {
+		text-align: center;
+		font-size: 26px;
+		font-family: @din_med;
+		margin: 7px 0;
+	}
+
+	.popup-dscr {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	form {
+		margin-top: 18px;
+		width: 282px;
+
+		.text-inp {
+			width: 100%;
+		}
+
+		.submit-form {
+			margin-top: 5px;
+			width: 100%;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 8px;
+			font-size: 16px;
+			color: #434847;
+		}
+	}
+
+	.modal-close {
+		position: absolute;
+		top: -37px;
+		right: -37px;
+		font-size: 0;
+
+		&:hover {
+			.i-close-modal {
+				.sprite(-16px,-188px);
+			}
+		}
+	}
+}
